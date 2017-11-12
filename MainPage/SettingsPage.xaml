@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MainPage.SettingsPage">
+	<ContentPage.Content>
+        <TableView>
+            <TableView.Root>
+                <TableSection Title="Privacy">
+                    <SwitchCell Text="Receive E-mails" x:Name="swCell" OnChanged="swReceive_Switched" On="{Binding receive}"/>
+                    <EntryCell Placeholder="Type in your e-mail" x:Name="txtMail" Completed="txtName_Completed"/>
+                </TableSection>
+            </TableView.Root>
+        </TableView>
+	</ContentPage.Content>
+</ContentPage>
